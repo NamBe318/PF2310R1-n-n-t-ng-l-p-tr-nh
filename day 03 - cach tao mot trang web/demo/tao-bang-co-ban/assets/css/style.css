@@ -1,0 +1,16 @@
+table {
+    border: 1px solid rgb(134, 134, 134);
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(134, 134, 134);
+}
+
+td, th {
+    border: 1px solid rgb(134, 134, 134);
+    padding: 5px;
+}

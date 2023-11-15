@@ -1,0 +1,28 @@
+.blue {
+    color: blue;
+    text-align: end;
+}
+
+.orange {
+    color: orange;
+}
+
+h2 {
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+form {
+    padding-top: 20px;
+    height: 240px;
+    width: 530px;
+    background-color: aqua;
+}
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    background-color: white;
+}

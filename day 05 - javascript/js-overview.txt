@@ -1,0 +1,51 @@
+- JavaScript: là 1 ngôn ngữ lập trình, lập trình thủ tục. Phần quan trọng của nó là hàm.
+	- ES5
+	- ES6
+- Ngôn ngữ lập trình: cú pháp đưa ra để giải quyết bài toán bằng cách ra chỉ thị cho máy tính làm việc.
+	- Ngôn ngữ máy: là ngôn ngữ mà máy tính thể hiểu được, mã bit: 0 1
+	- Ngôn ngữ trung gian (asembly): ngôn ngữ hỗ trợ giao tiếp giữa ngôn ngữ máy và ngôn ngữ bậc cao
+	- Ngôn ngữ bậc cao: là các ngôn ngữ lập trình đang được sử dụng để ra chỉ thị cho máy tính (viết code)
+- 1 số lưu ý khi làm việc với Js:
+	+ Đây là NN không thuần hướng đối tượng 
+	+ Auto convert trong Js
+	+ Không quá quan tâm đến kiểu dữ liệu của 1 biến
+- Js hỗ trợ tăng khả năng xử lý của HTML, bổ trợ cho thiết kế và làm việc trong lập trình web
+
+* Biến - Kiểu dữ liệu - Toán tử
+* Biến - Variable: là 1 vùng nhớ chứa giá trị, giá trị này có thể thay đổi trong chương trình. Vùng nhớ này được đặt tên => tên của biến. Khi muốn sử dụng giá trị của biến, chúng ta sẽ truy xuất qua tên của biến.
+- Khai báo biến:
+	- let: khai báo biến cục bộ, phạm vi sử dụng của biến là trong 1 khối lệnh (block)
+		không được khởi tạo lại trong cùng 1 block
+	- var: khai báo biến toàn cục, phạm vi sử dụng của biến là trong cả chương trình
+		sẽ được khởi tạo lại
+	- const: khai báo 1 biến là hằng số, giá trị của biến không thay đổi
+- Chúng ta có thể gán giá trị cho biến ngay sau khai báo với toán tử gán
+
+!LƯU Ý: cặp thẻ <script> được sử dụng để khai báo vùng chứa mã code của Javascript trong trang HTML. Thường được đặt ở dưới phần body của HTML
+- Đây là 1 trong 3 cách nhúng Js vào trang HTML
+	- inline: viết trực tiếp mã JS vào các thẻ mở của thành phần HTML
+	- internal: sử dụng cặp thẻ script để viết mã
+	- external: sử dụng file .js để chứa mã Js và gắn vào trang HTML thông qua source file trong thẻ script
+* Kiểu dữ liệu - DataType: 7 kiểu - 2 dạng: nguyên thủy (premitive) - đối tượng (object)
+- KDL nhằm định dạng cho giá trị được gán vào biến khi khai báo
+	- Number: 0-9
+	- String: a-z
+	- Boolean: true/false
+	- Undefined
+	- Null
+	- Symbol
+	- Object
+* Toán tử - Operator: các phép toán nối giữa các biểu thứ, nhằm tính toán 1 biểu thức thành kết quả
+	- Số học: dùng để tính toán các số học
+		+ - * / %
+		%: toán tử lấy dư (module, mod)
+	- So sánh: dùng để so sánh 2 hay nhiều điều kiện, thường trả về đúng sai (true/false)
+		>  <  >=  <=  ==  ===  !=  !==
+	- Logic: xác định giá trị của 1 cặp điều kiện
+		!  &&  ||
+	- Gán: dùng để gán giá trị của biểu thức cho biến
+		=
+		Gán tổ hợp: +=  -=  *=  /=  %=  :  với toán tử này, chúng ta sẽ thực hiện dùng lúc phép toán học và 		sau đó gán lại giá trị luôn
+	- Cộng chuỗi: dùng để nối 2 toán hạng, mà 1 trong 2 toán hạng là chuỗi
+		+ với điều kiện 1 trong 2 toán hạng 2 bên phải là chuỗi
+	- Typeof: dùng kiểm tra kiểu dữ liệu của biến

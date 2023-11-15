@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Nhập ngày
+    <input type="text" name="" id="day"></p>
+    <p>Nhập tháng
+    <input type="text" name="" id="month"></p>
+    <p>Nhập năm
+    <input type="text" name="" id="year"></p>
+    <button onclick="m1()">hiển thị</button>
+</body>
+<script>
+    function m1(){
+        let a = document.getElementById("day").value
+        let b = document.getElementById("month").value
+        let c = document.getElementById("year").value
+        let d = a+"-"+b+"-"+c
+        document.write(d)
+    }
+</script>
+</html>
