@@ -1,0 +1,32 @@
+- Nhúng Js vào HTML:
+	- inline: viết trực tiếp mã và HTML, thường thông qua các sự kiện trong HTML
+	- internal: viết mã Js trong cặp thẻ <script> ở cuối của trang HTML
+	- external: viết mã Js trong file .js và dẫn link vào trang HTML thông quá src của thẻ <script>
+
+- Nhập và xuất dữ liệu trong trang HTML với Js:
+* Input: nhập dữ liệu từ bàn phím thông qua HTML đưa vào Js
+	+ prompt(): 1 dạng hộp thoại dialogbox, có chứa ô input để nhập liệu từ bàn phím, giá trị nhập vào từ prompt sẽ LUÔN LUÔN có dạng là String
+	+ document.getElementById(id).value: thường dùng để lấy giá trị của 1 ô input có id tương ứng trong ngoặc đơn
+* Output: xuất dữ liệu từ Js ra trang HTML
+	+ alert(): hiển thị giá trị dưới dạng 1 dialogbox, có nút để đóng cửa sổ
+	+ console.log(): hiển thị giá trị ở phần console của DevTool trên trình duyệt
+	+ document.write(): hiển thị giá trị trên màn hình trình duyệt, xóa toàn bộ các phần tử tồn tại trước đó
+	+ document.getElementById(id). : hiển thị giá trị trên thành phần có id tương ứng
+		- innerText: sẽ hiển thị thuần text, không thay đổi gì
+			<h1>HelloWorld</h1> => <h1>HelloWorld</h1>
+		- innerHTML: sẽ hiện các thẻ HTML trong text (nếu có) thành định dạng HTML
+			<h1>HelloWorld</h1> => HelloWorld (in đậm, có định dạng của thẻ h1)
+
+* Auto convert:
+	- String vẫn có thể tính toán như số: 
+		+ chuỗi nhập vào thực chất là số: 1234, 56
+		+ các chuỗi này được sử dụng gắn kèm với các toán tử toán học, ngoại từ toán tử cộng
+	Vd: 123 + "321" => "123321"
+	123 * "2" => 246
+	123 * "A" => lỗi
+
+- Chuyển từ dạng chuỗi (giá trị số) thành số thực tế:
+	+ thêm dấu cộng ở trước phần gán của biểu thức
+	+ sử dụng các hàm chuyển đổi số: parseInt(), parseFloat()
+	+ sử dụng hàm khởi tạo Number()
+Lưu ý: giá trị của chuỗi phải thực sự có định dạng số, nếu không sẽ phát sinh lỗi

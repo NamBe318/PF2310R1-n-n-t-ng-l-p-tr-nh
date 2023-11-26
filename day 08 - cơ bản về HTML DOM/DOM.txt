@@ -1,0 +1,23 @@
+- HTML - HyperText Markup Language: ngôn ngữ đánh dấu siêu văn bản, hỗ trợ phần build giao diện web
+- DOM - Document Object Model: 
+
+Vd: đối tượng Con mèo: chiều cao, cân nặng, màu lông, tuổi
+	- ăn
+	- đi lại
+	- kêu
+	- bắt chuột
+tương đương ví dụ: thẻ HTML cũng được mô hình hóa thành 1 đối tượng trong mô hình của DOM
+	- thẻ văn bản: p
+		- thuộc tính: nội dung của thẻ (innerHTML), style, chiều dài thẻ (width), chiều cao (height)
+		- phương thức: cung cấp bởi DOM: document.getElementByTagName("p")
+						document.getElementById("id")
+
+- Xem thành phần DOM của trang web: chuột phải => inspect (kiểm tra)
+				phím F12 (Fn + F12)
+
+- Sự kiện (event): các hành động trên trang HTML => các thuộc tính để bắt và xử lý các sự kiện đó
+	- onclick: xảy ra khi có hành động click chuột vào 1 thành phần HTML tương ứng
+	- onchange: xảy ra khi có sự thay đổi trong 1 thành phần HTML tương ứng
+	- oninput: xảy ra khi nội dung của thẻ input được thay đổi
+	- onmouseout: xảy ra khi con trỏ chuột rời khỏi thành phần HTML tương ứng
+	- onmouseover: xảy ra khi con trỏ chuột đi qua thành phần HTML tương ứng 

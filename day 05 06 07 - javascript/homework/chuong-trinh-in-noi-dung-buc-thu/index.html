@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+    <title>Document</title>  
     <style>
-        div {
+        #demo {
             display: none;
         }
     </style>
+</head>
 
+<body>
+  
+
+<div id="test">
     <input type="text" name="" id="name" placeholder="Nhập Tên">
     <br></br>
     <input type="text" name="" id="location" placeholder="Nhập Địa Điểm">
@@ -21,7 +23,7 @@
     <input type="text" name="" id="time" placeholder="Nhập Ngày Tháng Năm">
     <br></br>
     <button onclick="m1()">hiển thị</button>
-
+</div>
     <div id="demo">
         <p><span id="name+"></span> thương nhớ</p>
         <p>Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều.
@@ -49,6 +51,7 @@
         document.getElementById("location+").innerHTML = b;
         document.getElementById("time+").innerHTML = c;
         document.getElementById("demo").style.display = "block";
+        document.getElementById("test").style.display = "none";
     }
 </script>
 
