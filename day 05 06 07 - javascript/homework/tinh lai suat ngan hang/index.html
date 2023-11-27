@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="Money" placeholder="nhập số tiền (Triệu Đồng)">
+    <input type="number" name="" id="Year" placeholder="nhập số năm">
+    <input type="number" name="" id="InterestRate" placeholder="Nhập lãi suất %">
+    <button onclick="m1()">Tính Lãi Suất</button>
+</body>
+<script>
+    function m1() {
+    let a = parseInt(document.getElementById("Money").value)
+    let b = parseInt(document.getElementById("Year").value)
+    let c = document.getElementById("InterestRate").value
+    let TienLai = ((a * c / 100) * b) + a
+    alert("Số tiền lãi cần trả là: " + TienLai)
+    }
+</script>
+</html>
