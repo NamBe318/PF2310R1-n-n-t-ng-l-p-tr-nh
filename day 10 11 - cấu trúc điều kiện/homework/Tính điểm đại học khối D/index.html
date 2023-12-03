@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính điểm ĐH khối D</h1>
+    <br>
+    <p>Môn Toán</p><input type="text" id="toan">
+    <br>
+    <p>Môn Văn</p><input type="text" id="van">
+    <br>
+    <p>Môn Anh</p><input type="text" id="anh">
+    <br>
+    <br>
+    <label for="dkv">khu vực</label>
+    <select name="" id="dkv">
+        <option value="0.75">KV1</option>
+        <option value="0.5">KV2-NT</option>
+        <option value="0.25">KV2</option>
+        <option value="0">KV3</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="DiemKhoiD()">Tính điểm</button>
+    <p id="result"></p>
+</body>
+<script>
+    function DiemKhoiD() {
+        let toan = +document.getElementById("toan").value
+        let van = +document.getElementById("van").value
+        let anh = +document.getElementById("anh").value
+        let dkv = +document.getElementById("dkv").value
+        if (toan < 0 || toan > 10 || van < 0 || van > 10 || anh < 0 || anh > 10) {
+            document.getElementById("result").innerHTML = "Nhập điểm không chính xác"
+        } else {
+            let tongdiem = toan + van + anh + dkv
+            document.getElementById("result").innerHTML = "Tổng điểm đại học của bạn là: " + tongdiem
+        }
+        document.getElementById("result").style.color = "red"
+    }
+</script>
+</html>

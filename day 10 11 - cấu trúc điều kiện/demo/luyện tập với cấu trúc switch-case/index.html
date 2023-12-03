@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="opt">
+        <option value="Edge">Edge</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Safari">Safari</option>
+        <option value="Opera">Opera</option>
+    </select>
+    <button onclick="option()">click</button>
+</body>
+<script>
+    function option() {
+    let browser = document.getElementById("opt").value
+    switch(browser) {
+        case "Edge":
+            alert("You've got the Edge!")
+            break;
+        case "Chrome":
+        case "Firefox":
+        case "Safari":
+        case "Opera":
+            alert("Okay we support these browsers too")
+            break;
+        default:
+            alert("We hope that this page looks OK!")
+
+    }
+}
+</script>
+</html>
