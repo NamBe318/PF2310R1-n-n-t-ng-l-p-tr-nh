@@ -20,18 +20,21 @@
             <th></th>
         </tr>
         <tr>
-            <td><input type="text" name="" id=""></td>
+            <td><input type="text" name="" id="money"></td>
             <td>
                 <select name="" id="from">
-                    <option value="">VietNam</option>
-                    <option value="">USD</option>
+                    <option value="23000">VietNam</option>
+                    <option value="1">USD</option>
                 </select>
             </td>
             <td>
-                <select name="" id="to"></select>
+                <select name="" id="to">
+                    <option value="23000">VietNam</option>
+                    <option value="1">USD</option>
+                </select>
             </td>
             <td>
-                <button>Convert</button>
+                <button onclick="ChangeCurrency()">Convert</button>
             </td>
         </tr>
     </table>
@@ -39,15 +42,11 @@
 </body>
 <script>
     function ChangeCurrency() {
-        let money = document.getElementById("Money").value
+        let money = document.getElementById("money").value
         let from = document.getElementById("from").value
         let to = document.getElementById("to").value
-        let result
-        if(from == "VND" && to == "USD") {
-            result = money / 23000
-        } else if(from == "USD" && to == "VND") {
-            result = money * 23000
-        }
+        let result = money * to / from
+        document.getElementById("result").innerHTML= "result: " + result.toFixed(3)
     }
 </script>
 </html>

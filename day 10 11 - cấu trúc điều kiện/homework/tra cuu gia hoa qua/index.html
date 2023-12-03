@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" placeholder="nhập tên hoa quả" id="fruit">
+    <button onclick="FruitPrice()">Xem giá</button>
+    <p id="price"></p>
+</body>
+<script>
+    function FruitPrice(){
+        let a = document.getElementById("fruit").value
+        let b 
+        switch (a) {
+            case "Ổi":
+            case "Dưa Hấu":
+                b = "20000 VNĐ/kg"
+                break;
+            case "Táo":
+            case "Xoài":
+                b = "30000 VNĐ/kg"
+                break;
+            case "Cam":
+            case "Chôm Chôm":
+                b = "40000 VNĐ/kg"
+                break;
+            case "Măng Cụt":
+                b = "50000 VNĐ/kg"
+                break;
+            default:
+                b = "Nhập không đúng tên quả!"
+        }
+        document.getElementById("price").innerHTML = b
+    }
+</script>
+</html>
