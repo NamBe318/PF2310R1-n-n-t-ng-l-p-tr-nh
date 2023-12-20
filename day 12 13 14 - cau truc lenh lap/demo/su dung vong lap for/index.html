@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="m1()">bai 1</button>
+    <button onclick="m2()">bai 2</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</body>
+<script>
+    function m1() {
+    let i
+    let text = ""
+    for (i = 0; i < 5; i++) {
+        text += "The number is: " + i + "<br>"
+    }
+    document.getElementById("demo").innerHTML = text
+}
+    function m2() {
+        let number = prompt("Nhap so cua ban: ")
+        let tong = 0
+        for (i = 1; i <= number; i += 1) {
+            tong = tong + i
+        }
+        document.getElementById("demo2").innerHTML = tong
+    }
+</script>
+</html>
