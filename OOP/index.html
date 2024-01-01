@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // tao 1 lop san pham co: ten, gia, sl, ham getI4 de in ra thong tin san pham
+    // tao ra 2 doi tuong tu lop ben tren
+    // tao lop
+    class SanPham {
+        constructor(x, y, z) {
+            this.ten = x
+            this.gia = y
+            this.sl = z
+        }
+
+        getI4() {
+            alert(this.ten + ", " + this.gia + ", " + this.sl)
+        }
+    }
+    let sp1 = new SanPham("A", 100, 10)
+    alert(sp1.ten)
+    let sp2 = new SanPham("B", 200, 15)
+    alert(sp2.gia)
+    sp2.getI4()
+</script>
+</html>

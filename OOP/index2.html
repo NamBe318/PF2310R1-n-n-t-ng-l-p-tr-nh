@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="chuvi()">chuvi</button>
+</body>
+<script>
+    // tao 1 lop HCN, co 2 thuoc tinh chieuDai va chieuRong
+    // co cac ham: tinhChuVi, tinhDienTich
+    // Tao 2 doi tuong hcn tu lop, dung thu 2 ham
+    class HCN {
+        constructor(a, b) {
+            this.chieuDai = a
+            this.chieuRong = b
+        }
+
+        tinhChuVi() {
+            let cv = (this.chieuDai + this.chieuRong) * 2
+            alert ("chu vi: " + cv)
+        }
+
+        tinhDienTich() {
+            let dt = (this.chieuDai * this.chieuRong)
+        }
+    }
+    function chuvi() {
+        let result1 = new HCN(10, 20)
+        alert("dài: " + result1.chieuDai + "rộng: " + result1.chieuRong)
+        result1.tinhChuVi()
+    }
+
+    // ===============================
+</script>
+</html>

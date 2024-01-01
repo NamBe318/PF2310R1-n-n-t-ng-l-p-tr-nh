@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="chuvi()">chuvi</button>
+    <button onclick="dientich()">dientich</button>
+</body>
+<script>
+    class HinhTron {
+        constructor(r) {
+            this.bankinh = r
+        }
+        
+        tinhChuVi() {
+            let cv = (this.bankinh * 2) * Math.PI
+            alert("chu vi hinh tron: " + cv.toFixed(2))
+        }
+        tinhDienTich() {
+            let dt = (this.bankinh * this.bankinh) * Math.PI
+            alert("dien tich hinh tron " + dt.toFixed(2))
+        }
+    }
+    function chuvi() {
+        let result1 = new HinhTron(10)
+        result1.tinhChuVi()
+    }
+    function dientich() {
+        let result2 = new HinhTron(5)
+        result2.tinhDienTich()
+    }
+</script>
+</html>

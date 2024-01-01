@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Bai1()">bai1</button>
+    <button onclick="Bai2()">bai2</button>
+</body>
+<script>
+    function Bai1() {
+        let num
+        let total = 0
+        while (num != -1) {
+            num = parseInt(prompt("Nhập số của bạn: "))
+            console.log(num)
+            total += num
+        }
+        document.write("tổng = " + total)
+    }
+
+    function Bai2() {
+        let n = 1
+        while (n < 100) {
+        document.write("<hr width =" + n + "%" + ">")
+        n++
+        }
+    }
+</script>
+</html>

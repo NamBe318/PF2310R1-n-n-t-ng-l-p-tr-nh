@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data"></div>
+    <div id="data2"></div>
+</body>
+<script>
+    let tamgiac = ""
+    for(let i = 0; i < 5; i++) {
+        for(let j = 4; j > i; j--) {
+            tamgiac += "&ensp;"
+        }
+        for(let j = 0; j <= i; j++) {
+            tamgiac += "*"
+        }
+        tamgiac += "<br>"
+    }
+    document.getElementById("data").innerHTML = tamgiac
+
+    let tamgiac2 = ""
+    for(let i = 0; i < 5; i++) {
+        for(let j = 0; j <= i; j++) {
+            tamgiac2 += "*"
+        }
+        tamgiac2 += "<br>"
+    }
+    document.getElementById("data2").innerHTML = tamgiac2
+</script>
+</html>

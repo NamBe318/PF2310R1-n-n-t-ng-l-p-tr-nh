@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+// tap lop Meo co thuoc tinh: can nang, ten
+// co cac ham: an(klta) can nang se tang = 1/2klta, getI4() hien thong tin
+// tao 2 doi tuong
+<script>
+    class Meo {
+        constructor(x, y) {
+            this.CanNang = x
+            this.Ten = y
+        }
+        an(klta) {
+            this.CanNang += 0.5*klta
+        } 
+        getI4() {
+            alert("mèo " + this.Ten + " cân nặng: " + this.CanNang)
+        }
+    }
+    let meo1 = new Meo(3, "MyDieu")
+    meo1.an(1)
+    meo1.getI4()
+</script>
+</html>
