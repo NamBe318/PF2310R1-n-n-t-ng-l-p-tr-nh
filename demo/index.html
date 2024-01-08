@@ -44,7 +44,7 @@ var cards = images.concat(clone); // merge to arrays
 
 // Shufffel function
 function shuffle(o){
-  for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i],   o[i] = o[j], o[j] = x);
+  for(var x, j, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i],   o[i] = o[j], o[j] = x);
   return o;
 }
 shuffle(cards);
@@ -67,7 +67,7 @@ for (var i = 0; i < cards.length; i++) {
   
     if (resultsArray.length > 1) {
 
-      if (resultsArray[0] === resultsArray[1]) {
+      if (resultsArray[0] === resultsArray[1]) {counter
         check("correct");
         counter ++;
         win();

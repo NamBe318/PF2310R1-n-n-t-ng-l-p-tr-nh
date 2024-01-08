@@ -48,27 +48,27 @@ h3 {
   font-size:2em;
 }
 
-button{
-  @include corners (5px);
-  background:#82d2e5;
-  color: #fff;
-  border: solid 1px #fff;
-  text-decoration:none;
-  cursor:pointer;
-  font-size:1.2em;
-  padding:18px 10px;
-  width:180px;
-  margin: 10px;
-  outline: none;
+// button{
+//   @include corners (5px);
+//   background:#fc0b0b;
+//   color: #fff;
+//   border: solid 1px #fff;
+//   text-decoration:none;
+//   cursor:pointer;
+//   font-size:1.2em;
+//   padding:18px 10px;
+//   width:180px;
+//   margin: 10px;
+//   outline: none;
  
-    &:hover {
-    	@include transition;
-    	background:#fff;
-    	border: solid 1px #fff;
-    	color:#82d2e5;
-  	}
+//     &:hover {
+//     	@include transition;
+//     	background:#fff;
+//     	border: solid 1px #fff;
+//     	color:#82d2e5;
+//   	}
     
-}
+// }
 
 
 #container {
